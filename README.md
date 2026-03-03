@@ -15,7 +15,7 @@ When in the project folder, run this command using Maven:
 
 If successful, you should be able to run the app using the following command:
 ```bash
-java -jar target/tazCalculator*.jar
+java -jar target/taxCalculator*.jar
 ```
 
 # Planning 
