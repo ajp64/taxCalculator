@@ -18,6 +18,9 @@ If successful, you should be able to run the app using the following command:
 java -jar target/taxCalculator*.jar
 ```
 
+# Walkthrough
+After cloning the repo, as part of the `./mvnw clean verify` the [tests](https://github.com/ajp64/taxCalculator/blob/main/src/test/java/com/hnry/taxCalculator/serviceTests/CalculationServiceTests.java) will run. When running the app, the user is prompted to enter a value using numerical characters with a single decimal. If a valid value is entered, the tax amount will be returned in the console and the user will be prompted to restart or close the app. 
+
 # Planning 
  - For language and framework, I decided to use Java in Spring. While it could possibly be a bulkier framework than what is required, I feel comfortable using it to easily set up a stand-alone app to handle this task.
 
