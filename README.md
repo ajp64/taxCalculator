@@ -1,3 +1,22 @@
+# Running the code
+Clone the repo and build locally. You will need installed:
+ - Java 17
+ - Maven
+
+Clone the repo by copying the url from GitHub, and using the following commands:
+
+`git clone <repo_url>`  
+`cd <project_folder>`
+
+When in the project folder, run this command using Maven:
+```bash
+./mvnw clean verify
+```
+
+If successful, you should be able to run the app using the following command:
+```bash
+java -jar target/tazCalculator*.jar
+```
 
 # Planning 
  - For language and framework, I decided to use Java in Spring. While it could possibly be a bulkier framework than what is required, I feel comfortable using it to easily set up a stand-alone app to handle this task.
