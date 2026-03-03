@@ -1,8 +1,10 @@
 package com.hnry.taxCalculator.service;
 
+import org.springframework.stereotype.Service;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-
+@Service
 public class CalculationService {
 
     private static final BigDecimal MAX_BAND_A_INCOME = BigDecimal.valueOf(15600);
@@ -25,6 +27,7 @@ public class CalculationService {
 
         catch (Exception e) {
             System.out.println("Please submit a value with only 0-9 and a single decimal place.");
+            return null;
         }
 
         if (incomeAsBigDecimal.compareTo(MAX_BAND_A_INCOME) <= 0)
