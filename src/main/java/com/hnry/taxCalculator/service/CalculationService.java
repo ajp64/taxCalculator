@@ -91,8 +91,6 @@ public class CalculationService {
 
         BigDecimal bracketCTax = isolateBracket.multiply(BigDecimal.valueOf(0.39));
 
-        BigDecimal sum = bracketCTax.add(MIN_BAND_E_TAX);
-
         return bracketCTax.add(MIN_BAND_E_TAX);
     }
 }
